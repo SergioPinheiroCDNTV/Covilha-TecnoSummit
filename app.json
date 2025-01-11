@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Covilhã TecnoSummit",
+    "slug": "covilha-tecnosummit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cdntv.covilhatecnosummit",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Este aplicativo precisa de acesso à câmera para permitir que você tire fotos para seu perfil.",
+        "NSPhotoLibraryUsageDescription": "Este aplicativo precisa de acesso às suas fotos para permitir que você selecione uma imagem para seu perfil."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.cdntv.covilhatecnosummit",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O aplicativo precisa acessar suas fotos para permitir o upload de imagem de perfil.",
+          "cameraPermission": "O aplicativo precisa acessar sua câmera para tirar fotos para seu perfil."
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    }
+  }
+}
